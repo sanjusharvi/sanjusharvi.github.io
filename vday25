@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day!</title>
+    <style>
+        body {
+            background-color: #ffccd5;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+        }
+        h1 {
+            color: #ff4d6d;
+            font-size: 3em;
+        }
+        .heart {
+            color: #ff4d6d;
+            font-size: 2em;
+            animation: pulse 1s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        .message {
+            display: none;
+            font-size: 1.5em;
+            color: #d6336c;
+        }
+        button {
+            background-color: #ff4d6d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        button:hover {
+            background-color: #d6336c;
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Valentine's Day, My Love! <span class="heart">❤️</span></h1>
+    <button onclick="showMessage()">Click for a surprise!</button>
+    <p class="message" id="valentineMessage">You are my everything! I love you more than words can say. 💕</p>
+    
+    <script>
+        function showMessage() {
+            document.getElementById('valentineMessage').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
